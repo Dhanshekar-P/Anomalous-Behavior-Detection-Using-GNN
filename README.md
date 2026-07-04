@@ -1,73 +1,79 @@
-# Anomalous Behavior Detection in Social Networks using Graph Neural Networks
+# Anomalous Behavior Detection in Social Networks Using Graph Neural Networks
 
-A scalable AI system designed to detect bots, spammers, and coordinated malicious behavior in social networks using Graph Neural Networks (GNNs).
+A machine learning project that detects anomalous behavior in social networks using Graph Neural Networks (GNNs). The system models users and their interactions as graphs to identify suspicious accounts through graph representation learning and explainable AI techniques.
 
-## Overview
-This project focuses on identifying anomalous and coordinated behavior in large-scale social networks. Instead of analyzing users individually, it models the entire platform as a graph to capture relationships and interaction patterns.
-
-## Tech Stack
-
-Core:
-- Python
-- PyTorch
-- PyTorch Geometric
-
-NLP:
-- RoBERTa (for semantic embeddings)
-
-Graph & Algorithms:
-- Graph Attention Network (GAT)
-- Graph Autoencoder (GAE)
-- Louvain Community Detection
-
-Frontend:
-- Streamlit
-
-Dataset:
-- TwiBot-22, cresc-15
+---
 
 ## Features
 
-- Graph-based modeling of social networks (nodes = users, edges = interactions)
-- Multi-modal feature engineering (numerical, categorical, semantic)
-- Supervised bot detection using GAT
-- Unsupervised anomaly detection using GAE
-- Detection of coordinated communities using clustering
-- Statistical anomaly detection using reconstruction error
-- Interactive dashboard for visualization
+- Graph-based anomaly detection
+- Graph Neural Network (GAT) implementation
+- RoBERTa-based feature embeddings
+- Graph Autoencoder reconstruction
+- Community detection using Louvain clustering
+- Explainability using GNNExplainer
+- Graph visualization
+- Model evaluation and performance analysis
 
-## System Pipeline
+---
 
-- Data preprocessing and feature extraction
-- Graph construction from user interactions
-- Train GAT model for bot classification
-- Train GAE model for anomaly detection
-- Community detection using Louvain algorithm
-- Identify anomalous groups using statistical thresholds
-- Visualize results using Streamlit dashboard
+## Tech Stack
 
-## Results
+- Python
+- PyTorch
+- PyTorch Geometric
+- NetworkX
+- Scikit-learn
+- Pandas
+- NumPy
+- Matplotlib
 
-- Accurate detection of bots and fake accounts
-- Identification of unknown anomalies and coordinated attacks
-- Robust performance on evolving social network behavior
+---
 
-## Purpose
+## Dataset
 
-This project was built to:
-- Explore Graph Neural Networks in real-world scenarios
-- Detect complex and coordinated malicious behavior
-- Combine supervised and unsupervised learning approaches
-- Build an end-to-end AI system
+- TwiBot-22
 
-## What I Learned
+---
 
-- Graph-based machine learning using PyTorch Geometric
-- Designing hybrid AI systems (classification + anomaly detection)
-- Working with large-scale social network data
-- Integrating NLP with graph models
+## Project Structure
 
+```text
+├── data/
+├── models/
+├── notebooks/
+├── training/
+├── evaluation/
+└── README.md
+```
 
+---
 
-## Repository
-https://github.com/your-username/gnn-anomaly-detection
+## My Contribution
+
+This project was developed collaboratively.
+
+My primary contribution focused on:
+
+- Backend and ML pipeline development
+- Graph data preprocessing
+- Model integration
+- Training workflow support
+- Evaluation and experimentation
+- Project organization
+
+---
+
+## Future Improvements
+
+- GraphSAGE implementation
+- Heterogeneous Graph Neural Networks
+- Model deployment using FastAPI
+- Interactive dashboard
+- Docker deployment
+
+---
+
+## Technologies
+
+Python • PyTorch • PyTorch Geometric • NetworkX • GNN • Machine Learning • Explainable AI
